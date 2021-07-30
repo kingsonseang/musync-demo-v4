@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/musync-logo.ico" type="image/x-icon">
+    <title>musync</title>
+</head>
+<body>
+
+    <img src="./images/musync 2.png" class="logo" alt="">
+    
+    <nav>
+        <!-- <button class="back"></button> -->
+        <h1 class="header">
+            Music
+        </h1>
+        <!-- <button class="accord">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </button> -->
+    </nav>
+
+        <!-- playlist container -->
+        <div class="playlistcon">
+
+            <!-- playlist test left -90deg -->
+            <div class="pltxt">
+                <p>
+                    Playlist
+                </p>
+                <i></i>
+            </div>
+
+            <!-- playlists scroll group -->
+            <div class="playlists">
+                <div class="playscroll">
+                    <div class="playlist"><img src="./images/1101594.jpg" alt=""></div>
+                    <div class="playlist"><img src="./images/2.png" alt=""></div>
+                    <div class="playlist"><img src="./images/3.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- categories -->
+        <div class="catgry">
+
+            <!-- song catgories btn -->
+            <div class="selcat">
+                <div class="btnrot">
+                    <button class="scatbtn">
+                            <div class="circle"></div>
+                            <p>Songs</p>
+                    </button>
+                    <button class="lcatbtn">
+                            <div class="circle" style="background: none;"></div>
+                            <p>Like</p>
+                    </button>
+                </div>
+            </div>
+
+            <!-- songs list -->
+            <div class="songs-container">
+                <div class="song">
+                    <img src="./images/1101600.png" alt="songsimg" class="songimg">
+                    <div class="info">
+                        <p class="infotittle">title</p>
+                        <p class="infoartist">artist</p>
+                    </div>
+                    <i class="far fa-heart"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bottom">
+            <!-- music playing -->
+            <div class="mPCont">
+                <div class="top">
+                    <audio src="./music/music.mp3" id="audio"></audio>
+                    <img src="./img/1101607.png" alt="" class="mpimg" id="cover">
+                    <div class="mptc">
+                        <div class="tp">
+                            <div class="infocon">
+                                <p class="mptTitle" id="title">tittle</p>
+                                <p class="mptArtist" id="artist">artist</p>
+                            </div>
+                            <div class="navigation">
+                                <button id="prev" class="actionbtn">
+                                    <i class="fas fa-step-backward"></i>  
+                                </button>
+                                <button id="play" class="actionbtn actionbtnbig">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <button id="next" class="actionbtn">
+                                    <i class="fas fa-step-forward"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- progress bar -->
+                        <div class="progresscon">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="navbar"></div>
+        </div>
+
+        <script src="./jsStyling.js"></script>
+        <script src="./app.js"></script>
+</body>
+</html>
